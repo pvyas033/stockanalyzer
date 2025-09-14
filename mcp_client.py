@@ -140,7 +140,7 @@ async def main(user_input: str):
                             tools_description += current_tool_description + "\n"
 
                         request_json = await generate_response(user_query = user_input, tools_description = tools_description)
-                        print(f"To execute  the User Query: {user_input} - The Identifies tool is {request_json['tool_identified']}, and the parameters required are {request_json['arguments']}")
+                        print(f"To execute  the User Query: {user_input} -\n The Identifies tool is {request_json['tool_identified']},\nclea and the parameters required are {request_json['arguments']}")
                         response = await session.call_tool(request_json['tool_identified'], arguments = request_json['arguments'])
                         print(f"{response.content[0].text}")
                         print("-"*50)
@@ -156,6 +156,8 @@ if __name__ == "__main__":
 
     while True:
         query = input("What is your query? : ")
+        if(query == "exit"):
+            break
         asyncio.run(main(query))
 
 

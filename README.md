@@ -107,3 +107,8 @@ stockanalyzer/
 2. **compare_stocks** → Compare two stock prices.  
 
 ---
+
+## Demo
+
+Check out full demo how this works:
+[Agent Stock Analyzer](https://pankajvyas.in/demo/stockana.mp4)
