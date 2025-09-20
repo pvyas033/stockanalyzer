@@ -22,3 +22,5 @@ Thumbs.db
 # VSCode / IDE configs
 .vscode/
 .idea/
+
+claude_desktop_config.json

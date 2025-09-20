@@ -119,7 +119,7 @@ async def main(user_input: str):
 
     server_params = StdioServerParameters(
         command = "python",
-        args = ["mcp_Server.py"],
+        args = ["mcp_server.py"],
         cwd = "."
     )
 

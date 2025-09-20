@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "stock-analyzer": {
+            "command": "<python-command-path>",
+            "args": ["<mcp-server-path>"]
+        }
+    }
+}
