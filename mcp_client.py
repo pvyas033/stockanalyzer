@@ -32,9 +32,10 @@ def fetch_tool_identifier_prompt():
         
         IMPORTANT:
         - Stock tickers should be actual exchange symbols (e.g., "AAPL" for Apple, "MSFT" for Microsoft).
+        - Also we need to make sure if stock ticker is for india or some other country
         - Do not output placeholders like "stock1" or "stock2".
         - Always assume the user query contains company names or stock tickers.
-        - If only company names are given, map them to likely tickers.
+        - If only a company name is given, map it to the most probable ticker AND exchange (e.g., "Reliance" → "RELIANCE.NS", "Apple" → "AAPL").
     """
 
     return tool_identifier_prompt
